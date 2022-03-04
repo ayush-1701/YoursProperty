@@ -49,37 +49,51 @@
     <!--/ Property Grid Star /-->
     
     <!-- filter start -->
-    <div class="container" style="padding-left: ;">
+    <div class="container">
      
       <!-- Example single danger button -->
       <div class="btn-group">
-        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Type
+        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Appartment Type
         </button>
         <div class="dropdown-menu">
-          <li><a class="dropdown-item" href="#"> <input type="checkbox"/> Action</a></li>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <li><a class="dropdown-item" > <input type="checkbox"/> 1 BHK</a></li>
+          <li><a class="dropdown-item" > <input type="checkbox"/> 2 BHK</a></li>
+          <li><a class="dropdown-item" > <input type="checkbox"/> 3 BHK</a></li>
+          <li><a class="dropdown-item" > <input type="checkbox"/> 4 BHK</a></li>
+          <li><a class="dropdown-item" > <input type="checkbox"/> Villa</a></li>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
+          <a class="dropdown-item" >Select Type of Appartment</a>
         </div>
-      </div>
+      </div> 
+      &nbsp;&nbsp;&nbsp;
       <div class="btn-group">
-        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Action
+        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Top Localities
         </button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
+          <li><a class="dropdown-item" > <input type="checkbox"/> Viman Nagar</a></li>
+          <li><a class="dropdown-item" > <input type="checkbox"/> Aundh</a></li>
+          <li><a class="dropdown-item" > <input type="checkbox"/> Baner</a></li>
+          <li><a class="dropdown-item" > <input type="checkbox"/> Hadapsar</a></li>
+          <li><a class="dropdown-item" > <input type="checkbox"/> Hinjewadi</a></li>
         </div>
       </div>
-            </div>
-          </div>
 
-    <!-- end filter -->
+      &nbsp;&nbsp;&nbsp;
+      <div class="btn-group">
+        <button type="button" class="btn btn-outline-primary " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Price &nbsp;:&nbsp;&nbsp;
+        </button>
+        &nbsp;&nbsp;
+        <div class="slidecontainer">
+          <input type="range" name="range" step="50000" min="3000000" max="10000000" value="5000000" onchange="rangePrimary.value=value">
+          <input type="text" id="rangePrimary" />
+        </div>
+      </div>
+
+    </div>
+  <!-- end filter -->
 
   <section class="property-grid grid">
     <div class="container">
